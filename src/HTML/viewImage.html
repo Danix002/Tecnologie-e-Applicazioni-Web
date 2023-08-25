@@ -1,0 +1,34 @@
+<div id = "viewImage-content">
+    <div id = "start">
+        <span>
+            <h1>Pasta&Basta</h1>
+        </span>
+        <img id = "logo" src = "../../IMG/logo.png">
+    </div>
+    <div id = "myGallery"> 
+        <button class = "leftButton" onclick = "plusDivs(-1)">&#10094;</button>
+        <img class = "view" src = "../../IMG/view1.png" style = "width:70%">
+        <img class = "view" src = "../../IMG/view2.png" style = "width:70%">
+        <img class = "view" src = "../../IMG/view3.png" style = "width:70%">
+        <button class = "rightButton" onclick = "plusDivs(1)">&#10095;</button>
+    </div>
+    <script>
+        var photoIndex = 1;
+        showDivs(photoIndex);
+        
+        function plusDivs(n) {
+          showDivs(photoIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("view");
+          if (n > x.length) {photoIndex = 1}
+          if (n < 1) {photoIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[photoIndex-1].style.display = "block";  
+        }
+    </script>
+</div>

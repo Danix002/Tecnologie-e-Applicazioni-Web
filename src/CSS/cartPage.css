@@ -1,0 +1,172 @@
+body{
+    background-color:#262c32;
+}
+
+body{
+	font-size: 12pt;
+    color: #ffffff;
+	font-family: "Tahoma", "Verdana", sans-serif;
+    text-align: center;
+	margin: 0px;
+	padding: 0px;
+    line-height: 1.4;
+    height: 100%;
+    width: 100%;
+}
+
+h2{
+    margin-top: 5%;
+    color: #ede12d;
+    text-align: center;
+}
+
+.errore{
+    color: red;
+    font-size: 8pt;
+}
+
+#formBoxCart{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#productsInCart{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center; 
+    border-radius: 0rem;
+    border-width: 1px;
+    padding: 2% 4% 2% 4%;
+    border-color: rgba(243, 230, 92, 0.993);
+    border-style: solid;
+    background-color: rgba(136, 147, 147, 0.329);
+    width: 60%;
+    margin-right: 2%;
+}
+
+#formIndirizzoConsegna{
+    display: none;
+    grid-template-columns: 1fr;
+    place-items: center; 
+    border-radius: 0rem;
+    border-width: 1px;
+    padding: 2% 2% 2% 2%;
+    border-color: rgba(243, 230, 92, 0.993);
+    border-style: solid;
+    font-size: 9pt;
+    background-color: rgba(136, 147, 147, 0.329);
+    width: 60%;
+}
+
+.product{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1% 1% 1% 1%;
+}
+
+.pastaImage{
+    height: 15%;
+    width: 20%;
+}
+
+.pastaImage > img{
+    height: 100%;
+    width: 100%;
+}
+
+#left-contentInCart{
+    width: 60%;
+    display: grid;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.nome{
+    font-size: 9pt;
+    color: #ede12d;
+}
+
+.prezzo{
+    margin-top: 1%;
+    font-size: 9pt;
+}
+
+#right-contentInCart{
+    margin-left: 1%;
+}
+
+#price{
+    color: #ede12d;
+}
+
+.buttonRemoveCart{
+    color: #f3de93;
+    background-color: #262c32;
+    cursor: pointer;
+    font-size: 8pt;
+    padding: 1% 1% 1% 1%;
+}
+
+#confirmAndBuy{
+    margin-top: 5%;
+}
+
+#buyButton{
+    color: #f3de93;
+    background-color: #262c32;
+    cursor: pointer;
+}
+
+.errore-cart{
+    color: #ff0000;
+}
+
+#errore-count{
+    color: #ff0000;
+}
+
+#infoUser{
+    margin: 1%
+}
+
+.loaderCart {
+    width: 1rem;
+    height: 1rem;
+    border: 3px solid #FFF;
+    border-bottom-color: #27accd;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 5%;
+    padding: 1%;
+    animation: rotation 1s linear infinite;  
+}
+
+.buttonNoProdRedirect{
+    color: #f3de93;
+    background-color: #262c32;
+    cursor: pointer;
+    width: 12%;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#formCart-content{
+    display: grid;
+}
+
+footer {
+    margin-top: 3%;
+    width: 100%;
+    height: 300px;
+    background-color: #262c32;
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+}

@@ -1,0 +1,152 @@
+body{
+    background-color:#262c32;
+}
+
+body{
+	font-size: 12pt;
+    color: #ffffff;
+	font-family: "Tahoma", "Verdana", sans-serif;
+	margin: 0px;
+	padding: 0px;
+    line-height: 1.4;
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    text-align: center;
+}
+
+#main > h2 {
+    margin-top: 5%;
+    color: #ede12d;
+}
+
+#centerDate{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+}
+
+#infoUser{
+    text-align: center;
+    margin: 2%
+}
+
+#fieldset{
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+#centerMyOrders{
+    display: grid;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgba(243, 230, 92, 0.993);
+    background-color: rgba(136, 147, 147, 0.329);
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+#centerMyOrders > div{
+    display: flex;
+    margin: 1% 1% 1% 1%;
+} 
+
+.pastaImage{
+    height: 15%;
+    width: 20%;
+    margin-right: 4%;
+}
+
+.pastaImage > img{
+    height: 100%;
+    width: 100%;
+}
+
+.nome{
+    font-size: 9pt;
+    color: #ede12d;
+    margin-left: 2%;
+}
+
+.dataAcquisto{
+    font-size: 9pt;
+    margin-left: 1%;
+}
+
+.errore{
+    color: red;
+}
+
+nav{
+    height: 10%;
+    background-color: #262c32;
+}
+
+#navigation{
+    margin: auto;
+    height: 100%;
+    width: 80%;
+}
+
+.ilTuoAccount{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    margin-bottom: 0%;
+    padding-bottom: 0rem;
+    place-items: center;
+    list-style: none;
+    color: #f3de93;
+}
+  
+.ilTuoAccount li {
+    height: 100%;
+    width: 100%;
+    transition: background-position-x 0.9s linear;
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 2%;
+    cursor: pointer;
+    transition: all 0.45s;
+}
+
+.ilTuoAccount li:hover {
+    color: #f6f3f4;
+}
+
+.loaderAccount {
+    width: 1rem;
+    height: 1rem;
+    border: 3px solid #FFF;
+    border-bottom-color: #27accd;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 5%;
+    padding: 1%;
+    animation: rotation 1s linear infinite;  
+}
+
+.errore-myAccount{
+    color: #ff0000;
+}
+
+footer {
+    margin-top: 3%;
+    width: 100%;
+    height: 300px;
+    background-color: #262c32;
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.selected{
+    text-decoration: underline;
+    color: #dda938;
+}
